@@ -32,12 +32,12 @@ export default {
   color: white;
   text-align: center;
   padding: 30px 0;
-  width: 99.8%; /* Genişlik */
-  max-height: 100px; /* Maksimum yükseklik */
-  position: fixed; /* Sabit konum */
+  width: 99.8%; 
+  max-height: 100px; 
+  position: fixed; 
   top: 0;
   left: 0;
-  z-index: 1000; /* Diğer öğelerin üzerinde olması için z-indeks */
+  z-index: 1000; 
 }
 
 .header-title {
@@ -46,6 +46,6 @@ export default {
 }
 
 .lorem-ipsum {
-  margin-top: 100px; /* Başlık yüksekliği kadar kaydırma yap */
+  margin-top: 100px;
 }
 </style>
