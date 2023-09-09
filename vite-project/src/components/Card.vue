@@ -16,15 +16,14 @@ export default {
     content: String,
   },
   setup(props) {
-    // props'ları defineProps kullanmadan direkt olarak kullanabilirsiniz
+  
     const title = props.title;
     const content = props.content;
 
-    // props'ları kullanabilirsiniz
     console.log('Title:', title);
     console.log('Content:', content);
 
-    // Geriye herhangi bir şey döndürmeye gerek yok
+
   },
 };
 </script>
@@ -33,7 +32,7 @@ export default {
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 100px; /* Önceki 100px düzeltildi */
+  padding: 100px; 
   margin: 10px;
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
