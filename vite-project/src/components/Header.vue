@@ -7,22 +7,14 @@
   </div>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import { defineProps } from 'vue';
 
-export default {
-  setup() {
-    
-    const name = ref('Header');
-    const otherProperty = ref('Other Property Value');
-    const componentData = {
-      name,
-      otherProperty,
-    };
+const props = defineProps({
+header: String,
+});
 
-    return componentData;
-  },
-};
+console.log(props.header); 
 </script>
 
 <style scoped>
@@ -34,10 +26,10 @@ export default {
   padding: 30px 0;
   width: 99.8%; 
   max-height: 100px; 
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .header-title {
@@ -46,6 +38,7 @@ export default {
 }
 
 .lorem-ipsum {
-  margin-top: 100px;
+  margin-top: 100px; 
 }
 </style>
+
