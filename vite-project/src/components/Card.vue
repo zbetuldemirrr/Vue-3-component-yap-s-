@@ -6,26 +6,15 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { defineProps } from 'vue';
+const props = defineProps({
+  title: String,
+  content: String,
+});
 
-export default {
-  name: 'Card',
-  props: {
-    title: String,
-    content: String,
-  },
-  setup(props) {
-  
-    const title = props.title;
-    const content = props.content;
-
-    console.log('Title:', title);
-    console.log('Content:', content);
-
-
-  },
-};
+console.log( props.title);
+console.log( props.content);
 </script>
 
 <style scoped>
