@@ -33,9 +33,9 @@ export default {
   text-align: center;
   padding: 30px 0;
  
- width: 99.8%; /* Genişlik */
- max-height:500px;/* Maksimum yükseklik */
-  position: fixed; /* Sabit konum */
+ width: 99.8%; 
+ max-height:500px;
+  position: fixed;
 
 bottom:0px;
   left: 0;
@@ -47,8 +47,8 @@ bottom:0px;
 }
 
  .footer-title{
-  font-size:170px; /* Yazı boyutu */
-  text-align: center; /* Yazı hizalama */
+  font-size:170px; 
+  text-align: center; 
 
  
  }
