@@ -4,25 +4,15 @@
       <h1 class="footer-title"> Footer</h1>
   </footer>
 </template>
-<script>
-import { ref } from 'vue';
 
-export default {
-  setup() {
-   
-    const name = ref('Footer');
+<script setup>
+import { defineProps } from 'vue';
 
-  
-    const otherProperty = ref('Other Property Value');
+const props = defineProps({
+  footer: String,
+});
 
-    const componentData = {
-      name,
-      otherProperty,
-    };
-
-    return componentData;
-  },
-};
+console.log(props.footer); 
 </script>
 
 <style scoped>
@@ -35,7 +25,7 @@ export default {
  
  width: 99.8%; 
  max-height:500px;
-  position: fixed;
+  position: fixed; 
 
 bottom:0px;
   left: 0;
