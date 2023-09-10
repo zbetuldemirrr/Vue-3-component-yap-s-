@@ -1,6 +1,6 @@
 <template>
 
-    <Header />
+    <Header title="Header"/>
     <div class="card-list">
       <Card
         v-for="(card, index) in cards"
@@ -9,7 +9,7 @@
        
       />
   
-    <Footer />
+  <Footer title="Footer"  />
   </div>
 </template>
 
